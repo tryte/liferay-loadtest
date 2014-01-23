@@ -42,6 +42,9 @@
 				</configuration>
 			</plugin>
 
+			<!-- This plugin is required for the Liferay IDE to detect and add the 
+				Liferay Portlet facet, which in turn appears to be required to deploy via 
+				m2e-wtp. Liferay and maven-plugin are version 6.2.0-RC5 via ~/.m2/settings.xml. -->
 			<plugin>
 				<groupId>com.liferay.maven.plugins</groupId>
 				<artifactId>liferay-maven-plugin</artifactId>
